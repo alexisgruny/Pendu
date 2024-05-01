@@ -1,21 +1,52 @@
-
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-rows: 50vh 10vh;
+    grid-template-columns: repeat(2,1fr);
+}
+.container > div:first-child{
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span{
+    margin-left: 30px;
+}
 .affichage{
     width: 50vw;
-    display: grid;
-    grid-template-rows: repeat(1,10vh);
-    grid-template-columns: repeat(10, 1fr);
     margin: auto;
+    text-align: center;
+}
+.lettreJouer{
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .game{
-    width: 50vw;
+    grid-column: 1/3;
+    width: 90vw;
     display: grid;
-    grid-template-rows: repeat(6,10vh);
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3,10vh);
+    grid-template-columns: repeat(10, 1fr);
     gap: 20px;
     margin: auto;
 }
 .boutton{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(74, 140, 228);
+    border-radius: 20px;
+}
+#u{
+    grid-column: 3;
 }
